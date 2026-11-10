@@ -1,0 +1,27 @@
+# Environment & secrets
+.env
+.env.*
+!.env.example
+
+# Firmware dumps & patched binary images (contain device-specific NVRAM/SN & vendor code)
+*.bin
+*.elf
+*.hex
+
+# Local photos directory
+photos/
+
+# Python virtual environments & bytecode
+.venv/
+venv/
+ENV/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# OS & editor files
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo

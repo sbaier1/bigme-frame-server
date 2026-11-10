@@ -1,0 +1,11 @@
+services:
+  bigme-frame-server:
+    build: .
+    container_name: bigme-frame-server
+    restart: unless-stopped
+    env_file:
+      - .env
+    ports:
+      - "${PORT:-8086}:${PORT:-8086}"
+    volumes:
+      - ./photos:/app/photos
